@@ -422,3 +422,6 @@ dist-ssr
 /.yarn/cache/yaml-npm-1.10.2-0e780aebdf-ce4ada136e.zip
 /.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip
 /.yarn/install-state.gz
+/.yarn/cache/@remix-run-router-npm-1.6.1-23c5c37534-4ca65d9c7d.zip
+/.yarn/cache/react-router-dom-npm-6.11.1-c723cae389-44566e10cb.zip
+/.yarn/cache/react-router-npm-6.11.1-6464a80fbc-c5cafbaac1.zip

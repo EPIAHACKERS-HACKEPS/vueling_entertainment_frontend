@@ -1,9 +1,6 @@
-import React, { PropsWithChildren } from 'react'
+import React from 'react'
 import {
-  Footer,
-  FooterText,
   Logo,
-  MainContent,
   Navbar,
   NavItem,
   NavLink,
@@ -11,35 +8,29 @@ import {
   NavList
 } from './styles'
 
-const NavBar = (props: PropsWithChildren) => {
+const NavBar = () => {
   return (
     <>
       <Navbar>
         <Logo src="/public/images/logo.svg" alt="Logo" />
         <NavList>
           <NavItem>
-            <NavLink href="/">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/trivial">Trivial</NavLink>
+            <NavLink to="/trivial">Trivial</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/igoto">I go to... </NavLink>
+            <NavLink to="/igoto">I go to... </NavLink>
           </NavItem>
           <NavItem>
-            <NavLinkDisabled href="/assistance">Assistance</NavLinkDisabled>
+            <NavLinkDisabled to="/assistance">Assistance</NavLinkDisabled>
           </NavItem>
           <NavItem>
-            <NavLinkDisabled href="/chat">Chat</NavLinkDisabled>
+            <NavLinkDisabled to="/chat">Chat</NavLinkDisabled>
           </NavItem>
         </NavList>
       </Navbar>
-
-      <MainContent>{props.children}</MainContent>
-
-      <Footer>
-        <FooterText>&copy; 2023 Vueling Entertainment</FooterText>
-      </Footer>
     </>
   )
 }

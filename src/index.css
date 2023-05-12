@@ -1,9 +1,25 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('/public/fonts/NunitoSans-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/public/fonts/NunitoSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 :root {
     --clr-charcoal: #333333;
     --clr-light-gray: #4D4D4D;
     --clr-off-white: #F3F3F3;
     --clr-white: #FFFFFF;
     --clr-yellow: #FFCC00;
+
+    --ff-primary: 'Nunito', sans-serif;
 }
 
 * {

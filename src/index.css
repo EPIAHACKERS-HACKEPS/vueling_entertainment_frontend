@@ -1,0 +1,13 @@
+:root {
+    --clr-charcoal: #333333;
+    --clr-light-gray: #4D4D4D;
+    --clr-off-white: #F3F3F3;
+    --clr-white: #FFFFFF;
+    --clr-yellow: #FFCC00;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

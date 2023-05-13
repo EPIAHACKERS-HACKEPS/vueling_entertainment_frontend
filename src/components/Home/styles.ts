@@ -25,32 +25,32 @@ export const FlightDetails = styled.div`
 `
 
 export const ArrivalCity = styled.h2`
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
   margin-bottom: 0.5rem;
 `
 
 export const DepartureCity = styled.h3`
-  font-size: 1.5rem;
+  font-size: calc(1rem + 0.5vw);
   margin-bottom: 0.5rem;
 `
 
 export const TimeLeft = styled.p`
-  font-size: 1rem;
+  font-size: calc(1rem + 0.25vw);
   margin-bottom: 1rem;
   margin-top: 1rem;
 `
 
 export const ProgressBarContainer = styled.div`
   width: 100%;
-  height: 1rem;
-  background-color: #f0f0f0;
+  height: calc(1rem + 0.25vw);
+  background-color: var(--clr-off-white);
   border-radius: 10px;
   overflow: hidden;
   margin-top: 1rem;
 `
 
 export const ProgressBar = styled.div`
-  height: 1rem;
-  background-color: #ffcc00;
-  width: ${(props: ProgressBarProps) => props.progress}%;
+  height: calc(1rem + 0.25vw);
+  background-color: var(--clr-yellow);
+  width: calc(${(props: ProgressBarProps) => props.progress}% - 2px);
 `

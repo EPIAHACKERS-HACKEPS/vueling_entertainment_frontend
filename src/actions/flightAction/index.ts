@@ -1,9 +1,9 @@
 interface SetFlightAction {
-  type: 'SET_USERNAME';
+  type: 'SET_FLIGHT';
   payload: string;
 }
 
-export const setUsername = (username: string): SetUsernameAction => ({
-  type: 'SET_USERNAME',
+export const setFlight = (username: string): SetFlightAction => ({
+  type: 'SET_FLIGHT',
   payload: username
 })

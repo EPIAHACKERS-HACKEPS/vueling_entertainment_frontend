@@ -18,7 +18,7 @@ export const Navbar = styled.nav`
 `
 
 export const Logo = styled.img`
-  height: calc(4vw + 4vh);
+  height: calc(2vw + 4vh);
 `
 
 export const NavList = styled.ul`
@@ -26,6 +26,8 @@ export const NavList = styled.ul`
   list-style: none;
   justify-content: center;
   align-items: center;
+
+  margin: 0;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -43,7 +45,7 @@ export const NavItem = styled.li`
 
 export const NavLink = styled(Link)`
   display: inline-block;
-  padding: calc(1vw + 1vh) calc(2vw + 2vh);
+  padding: calc(1vw + 1vh) calc(1vw + 1vh);
   border-radius: 2rem;
   transition: background-color 0.3s ease;
   text-decoration: none;

@@ -11,7 +11,7 @@ export const FlightStatusContainer = styled.div`
   justify-content: center;
   height: auto;
   background-color: var(--clr-charcoal);
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 1rem;
 `
 

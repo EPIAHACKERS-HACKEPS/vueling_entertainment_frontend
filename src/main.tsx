@@ -7,11 +7,15 @@ import { configureStore } from '@reduxjs/toolkit'
 import { RootState } from './types'
 import usernameReducer from './reducers/usernameReducer'
 import flightReducer from './reducers/flightReducer'
+import questionsReducer from './reducers/questionsReducer'
+import trivialReducer from './reducers/trivialReducer'
 
 const store = configureStore<RootState>({
   reducer: {
     username: usernameReducer,
-    flight: flightReducer
+    flight: flightReducer,
+    trivial: trivialReducer,
+    question: questionsReducer
   }
 })
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

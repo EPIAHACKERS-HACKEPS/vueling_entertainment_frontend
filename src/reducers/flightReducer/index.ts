@@ -1,18 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { RootState } from '../../types'
-
-export interface FlightState {
-  Departure: string;
-  Arrival: string;
-  DepartureDate: string;
-  ArrivalDate: string;
-}
+import { FlightState, RootState } from '../../types'
 
 const initialState: FlightState = {
   Departure: 'Barcelona',
   Arrival: 'Madrid',
   DepartureDate: '2024-05-13T04:00:00.000Z',
-  ArrivalDate: '2024-05-13T05:35:00.000Z'
+  ArrivalDate: '2024-05-14T05:35:00.000Z'
 }
 
 const flightSlice = createSlice({

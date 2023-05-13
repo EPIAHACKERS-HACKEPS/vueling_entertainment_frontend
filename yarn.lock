@@ -3446,6 +3446,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"questions@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "questions@npm:0.0.6"
+  checksum: 974c6fed986a93233bf87e60d013a09313ddd6e59e3b634ffe648bdfeb256ff3d4e701505ba4ff57c8015844836c0a00cff263a2be3ac65f965771caad78f6be
+  languageName: node
+  linkType: hard
+
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
@@ -4240,6 +4247,7 @@ __metadata:
     eslint-plugin-react: ^7.32.2
     eslint-plugin-react-hooks: ^4.6.0
     js-cookie: ^3.0.5
+    questions: ^0.0.6
     react: ^18.2.0
     react-dom: ^18.2.0
     react-redux: ^8.0.5

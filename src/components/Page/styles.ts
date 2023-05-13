@@ -5,28 +5,23 @@ export const MainContent = styled.main`
   align-items: center;
   align-content: center;
   justify-content: center;
-  min-height: 80vh;
-  padding: 2rem;
-`
-
-export const ContentImage = styled.img`
-  max-width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: calc(85vh - 4rem);
+  padding: 2vw;
 `
 
 export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1vw;
   background-color: var(--clr-charcoal);
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -0.5vw 1vw rgba(0, 0, 0, 0.1);
   color: var(--clr-off-white);
   position: sticky;
   bottom: 0;
 `
 
 export const FooterText = styled.p`
-  font-size: 1rem;
+  font-size: calc(0.8vw + 0.8vh);
   font-family: var(--ff-primary);
 `

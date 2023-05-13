@@ -18,8 +18,8 @@ const trivialSlice = createSlice({
     setSavePoint: (state, action) => {
       state.savePoint = action.payload
     },
-    addScore: (state) => {
-      state.score = state.score + 1
+    addScore: (state, action) => {
+      state.score = state.score + action.payload
     },
     setIsGameOver: (state, action) => {
       state.isGameOver = action.payload

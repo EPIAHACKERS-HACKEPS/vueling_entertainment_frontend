@@ -9,13 +9,17 @@ import usernameReducer from './reducers/usernameReducer'
 import flightReducer from './reducers/flightReducer'
 import questionsReducer from './reducers/questionsReducer'
 import trivialReducer from './reducers/trivialReducer'
+import seatNumberReducer from './reducers/seatNumberReducer'
+import placeReducer from './reducers/placeReducer'
 
 const store = configureStore<RootState>({
   reducer: {
     username: usernameReducer,
     flight: flightReducer,
     trivial: trivialReducer,
-    question: questionsReducer
+    question: questionsReducer,
+    seatNumber: seatNumberReducer,
+    place: placeReducer
   }
 })
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

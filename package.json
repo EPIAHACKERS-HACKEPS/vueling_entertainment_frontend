@@ -12,6 +12,7 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^1.9.5",
+    "@types/uuid": "^9.0.1",
     "js-cookie": "^3.0.5",
     "questions": "^0.0.6",
     "react": "^18.2.0",
@@ -19,7 +20,8 @@
     "react-redux": "^8.0.5",
     "react-router": "^6.11.1",
     "react-router-dom": "^6.11.1",
-    "redux": "^4.2.1"
+    "redux": "^4.2.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.6",

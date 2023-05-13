@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../types'
-import { TrivialLogin } from '../TrivialLogin'
 import { Page } from '../Page'
 import { TrivialQuestion } from '../TrivialQuestion'
 import { setQuestions } from '../../reducers/questionsReducer'
+import { Login } from '../Login'
 
 const Trivial = () => {
   const username = useSelector((state: RootState) => state.username.username)
   const [usernameValid, setUsernameValid] = useState(false)
   const [loading, setLoading] = useState(false)
   const dispatch = useDispatch()
+  const destination = useSelector((state: RootState) => state.flight.Arrival)
 
   useEffect(() => {
     const myHeaders = new Headers()
@@ -50,7 +51,7 @@ const Trivial = () => {
                 )
           )
         : (
-        <TrivialLogin />
+        <Login title={`Trivial of ${destination}`} />
           )}
     </Page>
   )

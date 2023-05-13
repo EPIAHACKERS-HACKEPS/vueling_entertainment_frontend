@@ -4,22 +4,20 @@ interface TableRowProps {
   isCreator: boolean;
 }
 
-export const TableContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80vh;
-`
-
 export const Table = styled.table`
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export const TableHeader = styled.th`
   padding: 1rem;
   background-color: var(--clr-light-gray);
+  color: var(--clr-yellow);
   font-weight: bold;
   text-align: left;
 `
@@ -46,7 +44,8 @@ export const AddPlaceInput = styled.input`
 
 export const AddPlaceButton = styled.button`
   padding: 0.5rem 1rem;
-  background-color: var(--clr-light-gray);
+  background-color: var(--clr-yellow);
+  border: var(--clr-charcoal) 0.05rem solid;
   cursor: pointer;
 `
 

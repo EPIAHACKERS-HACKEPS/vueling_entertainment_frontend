@@ -6,19 +6,18 @@ export const Navbar = styled.nav`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 1vw;
-  background-color: var(--clr-charcoal);
+  background-color: var(--clr-light-gray);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    padding: 2vw;
+    padding: 1vw;
   }
 `
 
 export const Logo = styled.img`
-  height: calc(2vw + 4vh);
+  height: calc(2vw + 2vh);
 `
 
 export const NavList = styled.ul`
@@ -39,13 +38,13 @@ export const NavItem = styled.li`
   margin: 1vw;
 
   @media (max-width: 768px) {
-    margin: 2vh 0 0;
+    margin: 1vh 0 0;
   }
 `
 
 export const NavLink = styled(Link)`
   display: inline-block;
-  padding: calc(1vw + 1vh) calc(1vw + 1vh);
+  padding: calc(0.5vw + 0.5vh) calc(1vw + 1vh);
   border-radius: 2rem;
   transition: background-color 0.3s ease;
   text-decoration: none;
@@ -59,7 +58,7 @@ export const NavLink = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    padding: 2vw;
+    padding: 1vw;
     font-size: calc(2vw + 2vh);
   }
 `

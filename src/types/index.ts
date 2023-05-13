@@ -7,6 +7,9 @@ export interface FlightState {
   Arrival: string;
   DepartureDate: string;
   ArrivalDate: string;
+  Temperature: number;
+  Condition: string;
+  Icon: string;
 }
 
 export interface Record {
@@ -35,6 +38,7 @@ export interface Question {
 export interface Place {
   id: string;
   name: string;
+  creator: string;
   joinedBy: string[];
 }
 
@@ -42,9 +46,29 @@ export interface QuestionState {
   questions: Question[];
 }
 
+export interface SeatNumberState {
+  seatNumber: string;
+}
+
+export interface PlaceState {
+  places: Place[];
+}
+
 export interface RootState {
   username: UsernameState;
   flight: FlightState;
   trivial: TrivialState;
   question: QuestionState;
+  seatNumber: SeatNumberState;
+  place: PlaceState;
+}
+
+export interface FlightInfo {
+  origin_city: string;
+  destination_city: string;
+  origin_date: string;
+  destination_date: string;
+  temperature: number;
+  condition: string;
+  icon: string;
 }

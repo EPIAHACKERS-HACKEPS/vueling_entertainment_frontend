@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
 
 export const MainContent = styled.main`
-  display: flex;
+  display: grid;
   align-items: center;
+  align-content: center;
   justify-content: center;
   min-height: 80vh;
   padding: 2rem;

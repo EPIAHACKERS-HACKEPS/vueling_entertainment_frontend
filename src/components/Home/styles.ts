@@ -1,8 +1,5 @@
 import styled from '@emotion/styled'
-
-interface ProgressBarProps {
-  progress: number;
-}
+import { ProgressBarProps } from '../../types'
 
 export const FlightStatusContainer = styled.div`
   display: flex;

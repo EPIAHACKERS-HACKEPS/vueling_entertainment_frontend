@@ -11,6 +11,7 @@ import questionsReducer from './reducers/questionsReducer'
 import trivialReducer from './reducers/trivialReducer'
 import seatNumberReducer from './reducers/seatNumberReducer'
 import placeReducer from './reducers/placeReducer'
+import leaderBoardReducer from './reducers/leaderBoardReducer'
 
 const store = configureStore<RootState>({
   reducer: {
@@ -19,13 +20,12 @@ const store = configureStore<RootState>({
     trivial: trivialReducer,
     question: questionsReducer,
     seatNumber: seatNumberReducer,
-    place: placeReducer
+    place: placeReducer,
+    leaderBoard: leaderBoardReducer
   }
 })
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <Router />
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <Router />
+  </Provider>
 )

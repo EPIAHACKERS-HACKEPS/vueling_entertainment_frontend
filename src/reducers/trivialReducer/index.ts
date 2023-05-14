@@ -5,7 +5,8 @@ const initialState: TrivialState = {
   records: [],
   savePoint: 0,
   score: 0,
-  isGameOver: false
+  isGameOver: false,
+  exported: false
 }
 
 const trivialSlice = createSlice({
@@ -26,12 +27,21 @@ const trivialSlice = createSlice({
     },
     setScore: (state, action) => {
       state.score = action.payload
+    },
+    setExported: (state, action) => {
+      state.exported = action.payload
     }
   }
 })
 
-export const { addRecord, setScore, setSavePoint, addScore, setIsGameOver } =
-  trivialSlice.actions
+export const {
+  addRecord,
+  setScore,
+  setSavePoint,
+  addScore,
+  setIsGameOver,
+  setExported
+} = trivialSlice.actions
 
 export default trivialSlice.reducer
 

@@ -22,6 +22,7 @@ export interface TrivialState {
   savePoint: number;
   score: number;
   isGameOver: boolean;
+  exported: boolean;
 }
 
 export interface Question {
@@ -54,6 +55,16 @@ export interface PlaceState {
   places: Place[];
 }
 
+export interface Leader {
+  username: string;
+  score: number;
+  seat: string;
+}
+
+export interface LeaderState {
+  leaderBoard: Leader[];
+}
+
 export interface RootState {
   username: UsernameState;
   flight: FlightState;
@@ -61,6 +72,7 @@ export interface RootState {
   question: QuestionState;
   seatNumber: SeatNumberState;
   place: PlaceState;
+  leaderBoard: LeaderState;
 }
 
 export interface FlightInfo {
@@ -71,4 +83,8 @@ export interface FlightInfo {
   temperature: number;
   condition: string;
   icon: string;
+}
+
+export interface ProgressBarProps {
+  progress: number;
 }

@@ -21,13 +21,13 @@ const NavBar = () => {
             <NavLink to="/trivial">Trivial</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink to="/leaderboard">Leaderboard</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink to="/igoto">I go to... </NavLink>
           </NavItem>
           <NavItem>
             <NavLinkDisabled to="/assistance">Assistance</NavLinkDisabled>
-          </NavItem>
-          <NavItem>
-            <NavLinkDisabled to="/chat">Chat</NavLinkDisabled>
           </NavItem>
         </NavList>
       </Navbar>

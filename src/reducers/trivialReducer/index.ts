@@ -23,11 +23,14 @@ const trivialSlice = createSlice({
     },
     setIsGameOver: (state, action) => {
       state.isGameOver = action.payload
+    },
+    setScore: (state, action) => {
+      state.score = action.payload
     }
   }
 })
 
-export const { addRecord, setSavePoint, addScore, setIsGameOver } =
+export const { addRecord, setScore, setSavePoint, addScore, setIsGameOver } =
   trivialSlice.actions
 
 export default trivialSlice.reducer

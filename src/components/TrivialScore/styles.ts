@@ -28,3 +28,18 @@ export const ScoreText = styled.p`
   margin-top: 1rem;
   color: var(--clr-off-white);
 `
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const Button = styled.button`
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem 0 0;
+  background-color: var(--clr-yellow);
+  color: var(--clr-charcoal);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+`

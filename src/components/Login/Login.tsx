@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { SubmitButton, Title, UsernameForm, UsernameInput } from './styles'
 import { setUsername } from '../../reducers/usernameReducer'
-import { RootState } from '../../types'
 import { setSeatNumber } from '../../reducers/seatNumberReducer'
 
 interface LoginProps {
@@ -13,7 +12,6 @@ const Login = (props: LoginProps) => {
   const dispatch = useDispatch()
   const [newUsername, setNewUsername] = useState('')
   const [newSeatNumber, setNewSeatNumber] = useState('')
-  const destination = useSelector((state: RootState) => state.flight.Arrival)
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()

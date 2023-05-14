@@ -6,7 +6,7 @@ export const LeaderboardContainer = styled.div`
 `
 
 export const LeaderboardTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: calc(12px + 1.5vmin);
   font-weight: bold;
   margin-bottom: 1rem;
 `
@@ -24,4 +24,7 @@ export const TableRow = styled.tr`
 
 export const TableCell = styled.td`
   padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `

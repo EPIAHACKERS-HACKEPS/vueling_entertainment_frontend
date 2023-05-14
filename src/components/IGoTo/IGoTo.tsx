@@ -81,7 +81,7 @@ const Places: React.FC = () => {
     <Page>
       {!username
         ? (
-        <Login title="Login to IGoTo" />
+        <Login title="Login" />
           )
         : (
         <>

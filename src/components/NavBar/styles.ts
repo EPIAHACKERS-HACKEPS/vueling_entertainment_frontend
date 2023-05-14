@@ -53,7 +53,7 @@ export const NavLink = styled(Link)`
   font-size: calc(1vw + 1vh + 0.8rem);
 
   &:hover {
-    background-color: var(--clr-light-gray);
+    background-color: var(--clr-charcoal);
     color: var(--clr-yellow);
   }
 

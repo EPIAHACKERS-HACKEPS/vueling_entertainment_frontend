@@ -4,7 +4,6 @@ import { Home } from '../Home'
 import { Trivial } from '../Trivial'
 import IGoTo from '../IGoTo/IGoTo'
 import Leaderboard from '../Leaderboard/LeaderBoard'
-import { Page } from '../Page'
 
 const Router = () => {
   return (
@@ -14,7 +13,7 @@ const Router = () => {
         <Route path="/trivial" element={<Trivial />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/igoto" element={<IGoTo />} />
-        <Route path="/assistance" element={<Page />} />
+        {/* <Route path="/assistance" element={<Assistance />} /> */}
       </Routes>
     </BrowserRouter>
   )
